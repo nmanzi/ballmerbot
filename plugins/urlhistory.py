@@ -46,7 +46,7 @@ def format_reply(history):
     last_time = timesince.timesince(recent_time)
 
     if len(history) == 1:
-        return "%s linked that %s ago." % (last_nick, last_time)
+        return "TOO SLOW FUCKFACE %s POSTED THAT %s AGO WTLW" % (last_nick.upper(), last_time.upper())
 
     hour_span = math.ceil((time.time() - history[-1][1]) / 3600)
     hour_span = '%.0f hours' % hour_span if hour_span > 1 else 'hour'
