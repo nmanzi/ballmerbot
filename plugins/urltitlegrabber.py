@@ -14,5 +14,5 @@ def urltitlegrabber(match):
   t = http.get_html(url)
   title = t.find(".//title").text.strip().replace('\t', " ").replace('\n', "")
   # I really need to put this in a lookup
-  if title and not re.search("twitter.com", url) and not re.search("vimeo.com", url) and not re.search("youtube.com", url):
+  if title and not re.search("youtu.be", url) and not re.search("twitter.com", url) and not re.search("vimeo.com", url) and not re.search("youtube.com", url):
     return "[%s]" % title
